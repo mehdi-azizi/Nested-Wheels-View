@@ -318,9 +318,9 @@ public class NestedWheelsView extends View implements View.OnTouchListener
         if(selected>-1&&selected<texts.size()) {
             return texts.get(selected);
         }
-        else if(texts1.size()>0)
+        else if(texts.size()>0)
         {
-            return  texts1.get(0);
+            return  texts.get(0);
         }
         return null;
     }
