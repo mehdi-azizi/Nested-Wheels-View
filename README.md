@@ -15,13 +15,13 @@ This component is  a customized view with 2 nested circle that you can spin inde
 
 - By using  in xml layout :
 
-
+```android
        <com.ma.nestedwheels.NestedWheelsView
           android:layout_width="match_parent"
           android:layout_height="match_parent"
           android:id="@+id/my_nested_wheels"
          />
-
+```
 
 - Or Creating  in the source :
 
