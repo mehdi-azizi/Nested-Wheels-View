@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ma.sample.TextSample"
+    android:orientation="vertical"
+    >
+    <com.ma.nestedwheels.NestedWheelsView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mySpinner1"
+        android:layout_weight="1" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/outer_degree1"
+        android:text="Inner Wheel      degree=0°    selected= --" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/inner_degree1"
+        android:text="Outer Wheel      degree=0°    selected= --" />
+</LinearLayout>
