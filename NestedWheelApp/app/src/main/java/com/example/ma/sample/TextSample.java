@@ -5,6 +5,8 @@ import android.graphics.Paint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.example.ma.nestedwheel.R;
@@ -15,10 +17,24 @@ import java.util.ArrayList;
 public class TextSample extends AppCompatActivity {
     TextView outer_txt;
     TextView inner_txt;
+    NestedWheelsView myView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_sample);
+
+
+
+         myView=new NestedWheelsView(this);
+
+        LinearLayout some_layout=(LinearLayout)findViewById(R.id.some_layout) ;
+
+        LinearLayout.LayoutParams param=new
+                LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.MATCH_PARENT );
+
+        some_layout.addView(myView,param);
+
         outer_txt=(TextView)findViewById(R.id.outer_degree1);
         inner_txt=(TextView)findViewById(R.id.inner_degree1);
         initWheels();
@@ -75,7 +91,7 @@ public class TextSample extends AppCompatActivity {
         paints1.add(paint4);
         paints1.add(paint5);
         paints1.add(paint6);
-        NestedWheelsView myView = (NestedWheelsView) findViewById(R.id.mySpinner1);
+//        NestedWheelsView myView = (NestedWheelsView) findViewById(R.id.mySpinner1);
         myView.init(texts, texts1, paints, paints1);
 
 

@@ -9,12 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ma.sample.TextSample"
     android:orientation="vertical"
+    android:id="@+id/some_layout"
     >
-    <com.ma.nestedwheels.NestedWheelsView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/mySpinner1"
-        android:layout_weight="1" />
+    <!--<com.ma.nestedwheels.NestedWheelsView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/mySpinner1"-->
+        <!--android:layout_weight="1" />-->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
